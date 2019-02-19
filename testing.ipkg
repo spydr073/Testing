@@ -1,0 +1,8 @@
+package testing
+
+sourcedir = src
+
+pkgs      = terminal
+
+modules   = Testing.Unit
+
