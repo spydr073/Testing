@@ -2,8 +2,8 @@
 , prelude
 , base
 , lib
-, terminal
 , idris
+, terminal
 }:
 
 build-idris-package {
@@ -11,9 +11,9 @@ build-idris-package {
   version = "0.1";
   src = ./.;
 
-  #buildDepends = [];
+  buildDepends = [];
   idrisDeps = [ terminal ];
-  propagatedBuildInputs = [ prelude base ];
+  propagatedBuildInputs = [ prelude base terminal ];
 
   meta = {
     description = "Simple program testing for Idris";
